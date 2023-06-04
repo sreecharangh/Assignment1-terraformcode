@@ -137,12 +137,12 @@ resource "aws_lb_target_group_attachment" "ec2_instances" {
   port              = 80
 }
 
-resource "aws_ecr_repository" "example" {
-  name = "example-repo"
+resource "assignment1" "ecr1" {
+  name = "ecr1"
 }
 
 depends_on = [
   aws_lb_listener.rbg,
   aws_lb_target_group.rbg,
-  aws_ecr_repository.example,
+  aws_ecr_repository.ecr,
 ]
