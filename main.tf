@@ -17,10 +17,8 @@ resource "aws_instance" "app" {
 
 resource "aws_ecr_repository" "app_repo" {
   name = "app"
-  # Other repository configuration parameters...
 }
 
 resource "aws_ecr_repository" "db_repo" {
   name = "db"
-  # Other repository configuration parameters...
 }
