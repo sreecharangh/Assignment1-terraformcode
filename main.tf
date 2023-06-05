@@ -7,7 +7,7 @@ resource "aws_instance" "app" {
   instance_type = "t2.micro"
   subnet_id     = "subnet-02107dcc77c5746f5"
   security_group_ids = ["sg-08ba0abbbd57ef070"]
-  
+  key_name      = "key1"
 
   tags = {
     Name = "app"
